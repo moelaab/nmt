@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penerjemah Bahasa Madura - Neural Machine Translation</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col justify-between">
+
+    <!-- Header / Navbar -->
+    <header class="bg-white border-b border-slate-200 shadow-sm sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <span class="bg-blue-600 text-white font-bold px-3 py-1.5 rounded-lg text-sm">NMT</span>
+                <span class="font-semibold text-lg text-slate-900">Madura–Indonesia Translator</span>
+            </div>
+            <nav class="space-x-6 text-sm font-medium text-slate-600">
+                <a href="#demo" class="hover:text-blue-600 transition">Aplikasi</a>
+                <a href="#tentang" class="hover:text-blue-600 transition">Tentang</a>
+                <a href="#fitur" class="hover:text-blue-600 transition">Fitur</a>
+                <a href="https://github.com/moelaab/nmt" target="_blank" class="text-blue-600 hover:underline">GitHub</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-5xl mx-auto px-4 sm:px-6 py-12 flex-grow">
+        
+        <!-- Hero Section -->
+        <section class="text-center py-6">
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight mb-4">
+                Penerjemah Bahasa Madura <span class="text-blue-600">Berbasis Transformer</span>
+            </h1>
+            <p class="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed mb-6">
+                Antarmuka visual berbasis web yang dirancang untuk menjembatani komunikasi dwibahasa secara interaktif dan real-time menggunakan teknologi <em>Neural Machine Translation</em> (NMT).
+            </p>
+        </section>
+
+        <!-- Section: Interactive Demo / iFrame Space -->
+        <section id="demo" class="my-8">
+            <div class="bg-white p-4 sm:p-6 rounded-2xl shadow-md border border-slate-200">
+                <div class="flex items-center justify-between mb-4 px-2">
+                    <h2 class="text-xl font-bold text-slate-900 flex items-center gap-2">
+                        <span>🚀</span> Demo Antarmuka Penerjemah
+                    </h2>
+                    <span class="text-xs font-semibold bg-emerald-100 text-emerald-800 px-2.5 py-1 rounded-full">Live Space</span>
+                </div>
+                <!-- Container untuk Iframe -->
+                <div class="w-full overflow-hidden rounded-xl border border-slate-200 flex justify-center bg-slate-100">
+                    <iframe
+                        src="https://heviaa-skripsi-nmt-devi.hf.space"
+                        frameborder="0"
+                        width="850"
+                        height="450"
+                        loading="lazy"
+                        title="Penerjemah Bahasa Madura - NMT"
+                        class="w-full max-w-full rounded-xl shadow-inner"
+                    ></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Tentang Sistem -->
+        <section id="tentang" class="bg-white rounded-2xl p-8 shadow-sm border border-slate-200 my-10">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Tentang Proyek</h2>
+            <p class="text-slate-600 leading-relaxed">
+                Bahasa Madura merupakan salah satu bahasa daerah di Indonesia dengan penutur terbanyak yang tergolong sebagai <em>low-resource language</em>. Proyek ini menerapkan arsitektur <strong>Transformer</strong> modern untuk memproses struktur linguistik, morfologi, hingga variasi tingkat tutur bahasa Madura agar dapat diterjemahkan ke dalam Bahasa Indonesia secara akurat.
+            </p>
+        </section>
+
+        <!-- Section: Fitur Utama -->
+        <section id="fitur" class="grid md:grid-cols-3 gap-6 my-10">
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+                <div class="text-blue-600 font-bold text-xl mb-2">⚡ Self-Attention</div>
+                <p class="text-slate-600 text-sm leading-relaxed">Memproses kalimat secara paralel untuk memahami konteks hubungan antar-kata secara mendalam.</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+                <div class="text-blue-600 font-bold text-xl mb-2">🌐 Real-time NMT</div>
+                <p class="text-slate-600 text-sm leading-relaxed">Penerjemahan otomatis tingkat kata hingga kalimat utuh antara Bahasa Madura dan Indonesia.</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+                <div class="text-blue-600 font-bold text-xl mb-2">📚 Preservasi Digital</div>
+                <p class="text-slate-600 text-sm leading-relaxed">Mendukung pelestarian bahasa daerah melalui pendekatan kecerdasan buatan dan pemodelan deep learning.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 py-6 text-center text-sm text-slate-500">
+        <p>&copy; 2026 • Proyek NMT Bahasa Madura oleh <a href="https://github.com/moelaab" class="text-blue-600 hover:underline">moelaab</a>.</p>
+    </footer>
+
+</body>
+</html>
